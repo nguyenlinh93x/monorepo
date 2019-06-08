@@ -1,0 +1,19 @@
+{
+  "name": "@test/login",
+  "version": "0.0.0",
+  "description": "Login form",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "Bi",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "styled-components": "^4.3.1"
+  },
+  "dependencies": {
+    "@test/input": "^0.1.2"
+  }
+}
