@@ -1,0 +1,42 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.16.0/libexec/bin/yarn.js add -DW @babel/cli @babel/core @babel/preset-typescript @babel/preset-env babel-core@7.0.0-bridge.0 @babel/preset-react typescript @types/node
+
+PATH: 
+  /usr/local/opt/ruby/bin:/Users/macbook/Documents/Workplace/flutter/bin:/Users/macbook/.fastlane/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/ruby/bin:/Users/macbook/Documents/Workplace/flutter/bin:/Users/macbook/.fastlane/bin:/Users/macbook/Library/Android/sdk/emulator:/Users/macbook/Library/Android/sdk/tools:/Users/macbook/Library/Android/sdk/tools/bin:/Users/macbook/Library/Android/sdk/platform-tools:/Users/macbook/Library/Android/sdk/emulator:/Users/macbook/Library/Android/sdk/tools:/Users/macbook/Library/Android/sdk/tools/bin:/Users/macbook/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  10.15.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: http://localhost:4873/@lerna%2frun-parallel-batches/-/run-parallel-batches-3.13.0.tgz: Request failed "500 Internal Server Error"
+      at ResponseError.ExtendableBuiltin (/usr/local/Cellar/yarn/1.16.0/libexec/lib/cli.js:696:66)
+      at new ResponseError (/usr/local/Cellar/yarn/1.16.0/libexec/lib/cli.js:802:124)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.16.0/libexec/lib/cli.js:66161:16)
+      at Request.emit (events.js:182:13)
+      at Request.module.exports.Request.onRequestResponse (/usr/local/Cellar/yarn/1.16.0/libexec/lib/cli.js:130467:10)
+      at ClientRequest.emit (events.js:187:15)
+      at HTTPParser.parserOnIncomingClient [as onIncoming] (_http_client.js:556:21)
+      at HTTPParser.parserOnHeadersComplete (_http_common.js:109:17)
+      at Socket.socketOnData (_http_client.js:442:20)
+      at Socket.emit (events.js:182:13)
+
+npm manifest: 
+  {
+    "name": "root",
+    "private": true,
+    "devDependencies": {
+      "lerna": "^3.14.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

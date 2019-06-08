@@ -1,0 +1,78 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "tsc": "tsc",
+    "prebuild": "run-p tsc lint test",
+    "build": "lerna exec --parallel 'BABEL_ENV=build babel --root-mode upward src --out-dir dist --source-maps --extensions .ts,.tsx --delete-dir-on-start --no-comments'",
+    "lint": "run-p -c lint:*",
+    "lint:ts": "tslint 'packages/**/*.ts{,x}'",
+    "lint:css": "stylelint 'packages/**/*.ts{,x}'",
+    "test": "jest",
+    "fix": "yarn lint:ts --fix",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "commit": "git-cz"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@storybook/addon-actions": "^5.1.3",
+    "@storybook/addon-knobs": "^5.1.0-rc.5",
+    "@storybook/addon-links": "^5.1.3",
+    "@storybook/addons": "^5.1.3",
+    "@storybook/react": "^5.1.3",
+    "@types/enzyme": "^3.9.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.7",
+    "@types/react": "^16.8.19",
+    "@types/storybook__addon-actions": "^3.4.3",
+    "@types/storybook__addon-knobs": "^5.0.1",
+    "@types/storybook__addon-links": "^3.3.5",
+    "@types/storybook__react": "^4.0.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-loader": "^8.0.6",
+    "commitizen": "^3.1.1",
+    "cz-lerna-changelog": "^2.0.2",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.0.0-beta6",
+    "jest": "^24.8.0",
+    "jest-styled-components": "^6.3.1",
+    "lerna": "^3.14.1",
+    "moment": "^2.24.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.18.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.8.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.17.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.5.1",
+    "webpack": "^4.33.0"
+  },
+  "resolutions": {
+    "babel-core": "^7.0.0-bridge.0"
+  },
+  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  }
+}
