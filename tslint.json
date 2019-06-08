@@ -14,6 +14,7 @@
       "avoid-template",
       "jsx-double"
     ],
-    "no-implicit-dependencies": [true, "dev"],
+    "interface-name": false,
+    "no-implicit-dependencies": [false, "dev"]
   }
 }

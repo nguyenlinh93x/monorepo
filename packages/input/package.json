@@ -1,0 +1,12 @@
+{
+  "name": "@test/input",
+  "version": "0.0.0",
+  "description": "Input component",
+  "main": "/dist/index.ts",
+  "author": "Bi",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "styled-components": "^4.3.1"
+  }
+}

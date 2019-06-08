@@ -4,5 +4,14 @@
   ],
   "version": "independent",
   "useWorkspaces": true,
-  "npmClient": "yarn"
+  "npmClient": "yarn",
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "registry": "http://localhost:4873",
+      "access": "public",
+      "npmClient": "yarn",
+      "allowBranch": ["master", "feature/*"]
+    }
+  }
 }
