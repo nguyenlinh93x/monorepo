@@ -11,10 +11,10 @@
     "rootDir": "./",
     "baseUrl": "./",
     "paths": {
+      "@test/*": ["packages/*/src"],
       "*": ["node_modules", "packages"]
     },
   },
-
   "awesomeTypescriptLoaderOptions": {
     "useBabel": true,
     "babelCore": "@babel/core"
